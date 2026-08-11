@@ -47,6 +47,13 @@ p {
     font-size: 16px;
 }
 
+img {
+    width: 100%;
+    border: solid darkolivegreen;
+    border-width: 1px;
+    margin: 10px;
+}
+
 ul {
     list-style-type: square;
 }
