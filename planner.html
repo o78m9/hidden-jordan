@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Jordan - Planner</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Student Escape Planner</h1>
+        <p>
+            This page is a planning worksheet for students. It is not a booking system and it does
+            not save or process trip information. When the form is submitted, it only opens the
+            contact page.
+        </p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="planner.html">Planner</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div>
+        <h2>Simple Tutorial</h2>
+        <ol>
+            <li>Choose one route idea from the Resource Hub.</li>
+            <li>Write your group size, date, and available time.</li>
+            <li>Select a budget level and the activities you prefer.</li>
+            <li>Complete the manual worksheet and discuss the plan with your group.</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Planning Form</h2>
+        <form action="contact.html" method="get">
+            <fieldset>
+                <legend>Student Information</legend>
+                <p>
+                    <label>Name:</label><br>
+                    <input type="text" name="student_name" required>
+                </p>
+                <p>
+                    <label>Preferred Date:</label><br>
+                    <input type="date" name="trip_date" required>
+                </p>
+                <p>
+                    <label>Group Size:</label><br>
+                    <input type="number" name="group_size" min="1" max="20" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Choice</legend>
+                <p>
+                    <label>Route Idea:</label><br>
+                    <select name="route">
+                        <option value="northern">Northern Heritage Day</option>
+                        <option value="green" selected>Green Nature Escape</option>
+                        <option value="oldtown">Old Town Walking Day</option>
+                        <option value="desert">Desert Study Break</option>
+                    </select>
+                </p>
+                <p>Budget Level:</p>
+                <p>
+                    <input type="radio" name="budget_level" value="very_low" checked>
+                    <label>Very Low Budget</label><br>
+                    <input type="radio" name="budget_level" value="low">
+                    <label>Low Budget</label><br>
+                    <input type="radio" name="budget_level" value="medium">
+                    <label>Medium Budget</label>
+                </p>
+                <p>Preferred Activities:</p>
+                <p>
+                    <input type="checkbox" name="activity_walking" value="walking" checked>
+                    <label>Walking</label><br>
+                    <input type="checkbox" name="activity_nature" value="nature">
+                    <label>Nature</label><br>
+                    <input type="checkbox" name="activity_heritage" value="heritage">
+                    <label>Heritage</label><br>
+                    <input type="checkbox" name="activity_quiet" value="quiet">
+                    <label>Quiet study break</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Notes</legend>
+                <p>
+                    <label>Trip Notes:</label><br>
+                    <textarea name="student_notes" rows="6" cols="45"></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Send Planning Request">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </div>
+
+    <div>
+        <h2>Manual Budget Worksheet</h2>
+        <p>
+            This is a sample student budget worksheet. The total is calculated manually because
+            automatic calculation is not used in Phase 1.
+        </p>
+        <table>
+            <caption>Planning example only: write your own estimated amounts.</caption>
+            <tr>
+                <th>Item</th>
+                <th>Estimated Amount</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Transportation</td>
+                <td>Student estimate</td>
+                <td>Shared or individual plan.</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>Student estimate</td>
+                <td>Home-prepared or simple meal.</td>
+            </tr>
+            <tr>
+                <td>Entrance</td>
+                <td>Student estimate</td>
+                <td>Only if needed.</td>
+            </tr>
+            <tr>
+                <td>Emergency</td>
+                <td>Student estimate</td>
+                <td>Small safety amount.</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Manual total</td>
+                <td>Add the amounts yourself.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Static Recommendation Guide</h2>
+        <p>
+            This guide is fixed text, not a dynamic recommendation. Use it only as a planning
+            example.
+        </p>
+        <ul>
+            <li>Very Low Budget and half day: Old Town Walking Day or Green Nature Escape.</li>
+            <li>Low Budget and one day: Northern Heritage Day.</li>
+            <li>Medium Budget and more preparation time: Desert Study Break.</li>
+            <li>Nature preference: Green Nature Escape.</li>
+            <li>Culture preference: Northern Heritage Day.</li>
+        </ul>
+    </div>
+
+    <div>
+        <hr>
+        <p><a href="destinations.html">Compare route ideas again</a></p>
+        <p><a href="contact.html">Ask for academic support</a></p>
+    </div>
+</body>
+</html>

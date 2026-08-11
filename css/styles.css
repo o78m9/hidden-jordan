@@ -1,0 +1,114 @@
+body {
+    background-color: ivory;
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    margin: 20px;
+}
+
+div {
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border: solid darkolivegreen;
+    border-width: 1px;
+}
+
+nav {
+    background-color: darkseagreen;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+a {
+    color: darkgreen;
+    margin: 8px;
+}
+
+h1 {
+    color: darkolivegreen;
+    text-align: center;
+    font-size: 32px;
+}
+
+h2 {
+    color: sienna;
+    font-size: 24px;
+}
+
+h3 {
+    color: darkgreen;
+    font-size: 19px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+table {
+    width: 100%;
+    border: solid darkolivegreen;
+    border-width: 1px;
+    margin: 10px;
+}
+
+th {
+    background-color: darkolivegreen;
+    color: white;
+    border: solid darkolivegreen;
+    border-width: 1px;
+    padding: 8px;
+}
+
+td {
+    border: solid darkolivegreen;
+    border-width: 1px;
+    padding: 8px;
+}
+
+caption {
+    color: sienna;
+    padding: 8px;
+}
+
+form {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+fieldset {
+    border: solid darkolivegreen;
+    border-width: 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+legend {
+    color: darkgreen;
+}
+
+input {
+    margin: 4px;
+    padding: 4px;
+}
+
+textarea {
+    margin: 4px;
+    padding: 4px;
+}
+
+select {
+    margin: 4px;
+    padding: 4px;
+}
